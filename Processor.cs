@@ -4,10 +4,12 @@ namespace Processor1
 {
     internal class Processor
     {
+        private static string childProcessPath;
+
         static void Main()
         {
             // Путь к исполняемому файлу дочернего процесса
-            string childProcessPath = "childProcess.exe";
+            childProcessPath = "Class1.cs";
 
             // Создание процесса для запуска дочернего процесса
             Process process = new Process();
